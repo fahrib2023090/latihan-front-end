@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"
+      name="viewport"
+    />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container-header">
+      <p><i class="fa fa-bars" style="font-size: 20px"></i></p>
+      <h1>Bookshelf Apps</h1>
+      <p><i class="fa fa-search" style="font-size: 20px"></i></p>
+    </header>
+    <main>
+      <div class="iphone-mockup">
+        <div class="iphone-mockup-container">
+          <form action="" class="form-search" style="display: none;">
+            <div class="form-group-inline">
+              <input
+                type="text"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="Masukan Judul"
+              />
+              <input
+                type="submit"
+                value="Cari"
+                class="btn btn-success btn-search"
+              />
+            </div>
+          </form>
+          <div class="iphone-mockup-content">
+            <div id="master-data">
+              <h2 id="title" style="margin-inline-start: 3%;">Masukkan Buku Baru</h2>
+              <form action="" class="form-action">
+                <div class="form-group">
+                  <label>Judul</label>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    class="form-control"
+                    placeholder="Masukan Judul"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Penulis</label>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    class="form-control"
+                    placeholder="Masukan Penulis"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Tahun</label>
+                  <input
+                    type="number"
+                    min="1999"
+                    max="2023"
+                    name=""
+                    id=""
+                    class="form-control"
+                    placeholder="Masukan Tahun"
+                  />
+                </div>
+                <div class="form-group checkbox">
+                  <label for="hasBeenRead">Selesai Dibaca</label>
+                  <input
+                    type="checkbox"
+                    name="hasBeenRead"
+                    id="hasBeenRead"
+                    class="form-control"
+                    placeholder="Masukan Tahun"
+                  />
+                </div>
+                <input
+                  type="submit"
+                  value="Simpan"
+                  class="btn btn-block btn-success"
+                />
+              </form>
+            </div>
+            <div id="list-not-finished-reading" class="list">
+              <h2 id="title" style="margin-inline-start: 3%;">Belum selesai dibaca</h2>
+              <ul class="list-not-finished-reading">
+                <li>
+                  <div class="meta-book">
+                    <p class="judul-buku">Judul Buku</p>
+                    <table>
+                      <tr>
+                        <th>Penulis</th>
+                        <td>:</td>
+                        <td>Bill Gates, Bill Gates Bill Gates</td>
+                      </tr>
+                      <tr>
+                        <th>Tahun</th>
+                        <td>:</td>
+                        <td>555 77 854</td>
+                      </tr>
+                      
+                    </table>
+                  </div>
+                  <div class="button-action">
+                    <button id="flag-readed">Tandai Sudah Dibaca</button>
+                    <button id="destroy">Hapus</button>
+                  </div>
+                </li>
+              </ul>
+              
+
+            </div>
+            <div id="list-not-finished-reading" class="list">
+              <h2 id="title" style="margin-inline-start: 3%;">Selesai dibaca</h2>
+              <ul class="list-not-finished-reading">
+                <li>
+                  <div class="meta-book">
+                    <p class="judul-buku">Judul Buku</p>
+                    <table>
+                      <tr>
+                        <th>Penulis</th>
+                        <td>:</td>
+                        <td>Bill Gates, Bill Gates Bill Gates</td>
+                      </tr>
+                      <tr>
+                        <th>Tahun</th>
+                        <td>:</td>
+                        <td>555 77 854</td>
+                      </tr>
+                      
+                    </table>
+                  </div>
+                  <div class="button-action">
+                    <button id="flag-readed">Tandai Belum Dibaca</button>
+                    <button id="destroy">Hapus</button>
+                  </div>
+                </li>
+              </ul>
+              
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <span>&copy; 2023 Bookshelf Apps.</span>
+    </footer>
+  </body>
+</html>

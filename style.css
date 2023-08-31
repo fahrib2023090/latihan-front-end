@@ -1,0 +1,266 @@
+:root {
+    --max-width: 100%;
+}
+
+body {
+    max-width: var(--max-width);
+    margin: auto;
+    background: lightgrey;
+    display: flex;
+    flex-direction: column;
+}
+
+h2#title {
+    color: white;
+}
+
+.iphone-mockup-content > h2 {
+    padding-inline-start: 1.2rem;
+    margin: auto;
+    color: white;
+    padding-block-start: 20px;
+}
+
+.form-action::before {
+    display: inline-block;
+    content: "";
+    border-bottom: 1.3rem solid black;
+    width: 90%;
+    margin-inline-start: 13px;
+    margin-block-start: 20px;
+    transform: translateY(-1rem);
+    color: red;
+    border: 1px solid red;
+}
+
+.form-action {
+    padding: 10px
+}
+
+.form-action > .form-group {
+    margin-top: -10px;
+}
+
+.form-action > .form-group ~ .form-group {
+    border: none;
+    margin-top: 0;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    gap: 0.5rem;
+}
+
+.form-group.checkbox {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.form-group > label {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.form-group-inline {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn.btn-success.btn-search {
+    background-color: #0057f4;
+    color: white;
+    border: 0;
+    display: block;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.form-group-inline > input[type=text] {
+    width: 100%;
+}
+
+.form-control {
+    padding: 10px;
+}
+
+.list-not-finished-reading {
+    display: flex;
+    margin-inline: 0;
+    padding-inline-start: 1.3em;
+    color: wheat;
+    flex-direction: column;
+    gap: 15px;
+    overflow: auto;
+    background-color: lightblue;
+    height: 70vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 10px;
+    margin: 10px;
+}
+
+.list-not-finished-reading > li {
+    background: #1900ff;
+    width: 99%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    padding-inline-start: 10px;
+}
+
+.meta-book {
+    align-self: center;
+    width: 65%;
+}
+
+.judul-buku {
+    margin-block: 0;
+    margin-inline-start: 0.1em;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.button-action {
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+    width: 30%;
+    margin-inline: auto;
+    gap: 1rem;
+}
+
+#flag-readed {
+    background: #4CAF50;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    height: 2.5rem;
+}
+
+#flag-readed:hover {
+    cursor: pointer;
+    background:#78e0a8 ;
+}
+
+#destroy {
+    background: #F44336;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    height: 2.5rem;
+}
+
+#destroy:hover {
+    cursor:pointer;
+    background : rgb(255,99,71);
+}
+
+.btn.btn-block.btn-success {
+    background-color: cornflowerblue;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.container-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: cornflowerblue;
+    color: white;
+}
+
+.container-header > p:hover {
+    cursor: pointer;
+    background-color: #ff000038;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.container-header > p {
+    margin-inline: 20px;
+}
+
+.container-header > h1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.head_bar {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.iphone-mockup {
+    background-color: lightgray;
+}
+
+.iphone-mockup-container {
+    margin-left: auto;
+    margin-right: auto;
+    height: 85vh;
+    width: 100%;
+    max-width: var(--max-width);
+    background-color: purple;
+    position: relative;
+    z-index: 5;
+}
+
+.iphone-mockup-phone {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.donkey.de/wp-content/uploads/2020/08/iphone-11-1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.iphone-mockup-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    max-height: 90vh;
+    align-items: center;
+}
+
+#master-data {
+    width: 33.3%;
+}
+
+.list {
+    width: 33.3%;
+}
+
+footer {
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    background: cornflowerblue;
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
+    width: var(--max-width);
+    color: white;
+    font-weight: 600;
+    letter-spacing: .2rem;
+}
